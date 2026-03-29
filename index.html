@@ -213,25 +213,7 @@
     </div>
 </div>
 
-<script>
-    // Kiss counter
-    let kissCount = 0;
-    document.getElementById('kissBtn').onclick = function() {
-        kissCount++;
-        document.getElementById('kissCount').innerHTML = '💋 Kisses sent: ' + kissCount;
-        
-        // Create floating heart effect
-        const heart = document.createElement('div');
-        heart.innerHTML = '❤️';
-        heart.style.position = 'fixed';
-        heart.style.left = Math.random() * 100 + '%';
-        heart.style.bottom = '0px';
-        heart.style.fontSize = '20px';
-        heart.style.animation = 'floatUp 2s ease-out forwards';
-        heart.style.pointerEvents = 'none';
-        document.body.appendChild(heart);
-        setTimeout(() => heart.remove(), 2000);
-    };
+
 
     // Comfort button
     document.getElementById('comfortBtn').onclick = function() {
